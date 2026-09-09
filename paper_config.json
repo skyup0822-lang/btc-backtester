@@ -1,0 +1,7 @@
+{
+  "api_key": "",
+  "api_secret": "",
+  "risk_pct": 0.01,
+  "stop_pct": 0.15,
+  "poll_seconds": 60
+}

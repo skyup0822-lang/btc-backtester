@@ -1,0 +1,11 @@
+{
+  "api_key": "",
+  "api_secret": "",
+  "api_passphrase": "",
+  "simulated": true,
+  "risk_pct": 0.01,
+  "stop_pct": 0.15,
+  "poll_seconds": 60,
+  "auto_dump": false,
+  "auto_filter": false
+}

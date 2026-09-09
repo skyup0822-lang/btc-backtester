@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+lib/
+work/
+data/
+results/
+paper_state*
+paper_trades*
+pattern_history.json
+*.bak-*
+.venv/
