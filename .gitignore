@@ -1,0 +1,52 @@
+# ============ 第三方依赖 ============
+# 用 pip install -r requirements.txt 安装, 不进仓库
+lib/
+work/pylibs/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ============ 行情数据 ============
+# 几十MB, 用 python fetch_data.py 重新拉
+data/
+work/multi_data/
+
+# ============ 别人的代码 ============
+# 只是拿来做对比的参考, 不转发
+work/foreign/
+
+# ============ 回测产物 ============
+# 大文件重新生成即可; 小的汇总表(结果证据)保留
+results/tf_sweep_curves.csv
+results/*.png
+
+# ============ zuoshi 扫描快照 ============
+# 287 个 csv 是抓下来的盘口快照, 属于数据不是代码
+zuoshi/**/*.csv
+
+# ============ 模拟盘运行数据 ============
+# 本机账本/状态/日志, 不含密钥但没必要进仓库
+paper_state*.json
+paper_trades*.csv
+daily_report.csv
+decision_log.csv
+cash_audit.csv
+bars_history.csv
+pattern_history.json
+
+# 各种备份
+*.bak
+*.bak-*
+*.reset-bak-*
+*.dup-bak-*
+*.replay-bug-bak-*
+*.enc-bak
+
+# ============ 配置文件 ============
+# 里面有 API 密钥字段。用 paper_config.example.json 当模板
+paper_config.json
+paper_config_okx.json
+
+# ============ 本机专用 ============
+# 那个危险的 C:->E: 同步脚本已经被禁用了, 不推
+同步代码到E盘.bat.disabled

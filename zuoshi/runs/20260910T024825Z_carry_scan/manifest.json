@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "run_id": "20260910T024825Z_carry_scan",
+  "name": "carry_scan",
+  "started_utc": "2026-09-10T02:48:25+00:00",
+  "script": "carry_scan.py",
+  "script_sha256": "e1870d15cde94036eafcaf6b7bba84631b8c2befc4736b43de4cf7aae5a0a55e",
+  "python": "3.12.10",
+  "cwd": "E:\\btc-backtester\\zuoshi",
+  "params": {
+    "min_days": 14,
+    "min_no": 0.85,
+    "top": 30,
+    "risk_free": 0.045
+  },
+  "sources": {
+    "https://gamma-api.polymarket.com/events?active=true&closed=false&limit=400": {
+      "url": "https://gamma-api.polymarket.com/events?active=true&closed=false&limit=400",
+      "read_utc": "2026-09-10T02:48:25+00:00"
+    },
+    "data\\carry_snapshots.csv": {
+      "sha256": "2be1b0e45d94aecf6de2e4289d55101c5b8d163a4f3b3e82d29898792fc8a126",
+      "bytes": 6388,
+      "mtime_utc": "2026-09-10T02:48:39+00:00"
+    }
+  },
+  "artifacts": [
+    "runs\\20260910T024825Z_carry_scan\\report.md",
+    "data\\carry_snapshots.csv"
+  ],
+  "secrets_used": [],
+  "summary": {
+    "min_days": 14,
+    "min_no": 0.85,
+    "risk_free": 0.045,
+    "candidates": 725,
+    "priced": 201,
+    "above_rf": 86,
+    "best_ann": 1.7422,
+    "best_market": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-brazil-election"
+  },
+  "duration_s": 13.591,
+  "finished_utc": "2026-09-10T02:48:39+00:00"
+}

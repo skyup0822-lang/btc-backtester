@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "run_id": "20260910T024720Z_weather_official",
+  "name": "weather_official",
+  "started_utc": "2026-09-10T02:47:20+00:00",
+  "script": "weather_m1.py",
+  "script_sha256": "038cf31320f382b384925abbef39a11bb52e2c4db28290c514f49945210264e4",
+  "python": "3.12.10",
+  "cwd": "E:\\btc-backtester\\zuoshi",
+  "params": {
+    "cmd": "official",
+    "n": 20
+  },
+  "sources": {
+    "data\\weather\\hko_synop_*.csv": {
+      "pattern": "data\\weather\\hko_synop_*.csv",
+      "n": 22,
+      "bytes": 9108,
+      "digest": "0685795aca178eaea684dc88d2fb86558efe6955403a125b0ac2fe0adf93ac3e"
+    },
+    "data\\weather\\hko_official_*.csv": {
+      "pattern": "data\\weather\\hko_official_*.csv",
+      "n": 3,
+      "bytes": 1571,
+      "digest": "1ce9f6353d4d0b53232c578c39e33aa480a2402bd50f1cd3f534e2a4954beedc"
+    },
+    "data\\weather\\px_*.csv": {
+      "pattern": "data\\weather\\px_*.csv",
+      "n": 143,
+      "bytes": 906071,
+      "digest": "5e747635352c4e64fcace839f9f85bf89a27552b1c24a40592832f7db466a8e4"
+    },
+    "data\\weather\\hk_events.json": {
+      "pattern": "data\\weather\\hk_events.json",
+      "n": 1,
+      "bytes": 4494704,
+      "digest": "70f973db52e6c7fa3d9b259d569e018fe9423e514aaa9ee3e88c837730ea5a77"
+    }
+  },
+  "artifacts": [
+    "runs\\20260910T024720Z_weather_official\\report.md",
+    "runs\\20260910T024720Z_weather_official\\sources.txt"
+  ],
+  "secrets_used": [],
+  "summary": {
+    "days": 20,
+    "match": 20,
+    "match_rate": 1.0,
+    "source": "HKO CLMMAXT Observatory Daily Maximum Temperature"
+  },
+  "duration_s": 8.508,
+  "finished_utc": "2026-09-10T02:47:29+00:00"
+}

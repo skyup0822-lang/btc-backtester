@@ -1,0 +1,15 @@
+{
+  "api_key": "",
+  "api_secret": "",
+  "api_passphrase": "",
+  "simulated": true,
+  "risk_pct": 0.055,
+  "stop_pct": 0.15,
+  "trail_pct": 0.08,
+  "cny_rate": 7.2,
+  "poll_seconds": 60,
+  "auto_dump": false,
+  "auto_filter": false,
+  "news_gate": true,
+  "eth_enabled": true
+}

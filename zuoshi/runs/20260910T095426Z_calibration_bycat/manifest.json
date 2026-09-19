@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "run_id": "20260910T095426Z_calibration_bycat",
+  "name": "calibration_bycat",
+  "started_utc": "2026-09-10T09:54:26+00:00",
+  "script": "calibration.py",
+  "script_sha256": "9112235e5f54b8287ba9c6929a187701ba7f117a201d5f54a1de02693dcac628",
+  "python": "3.12.10",
+  "cwd": "E:\\btc-backtester\\zuoshi",
+  "params": {
+    "pages": 30,
+    "min_vol": 3000,
+    "horizons_days": [
+      1,
+      7,
+      30,
+      60
+    ]
+  },
+  "sources": {
+    "https://gamma-api.polymarket.com/events?closed=true&limit=100&order=endDate&ascending=false": {
+      "url": "https://gamma-api.polymarket.com/events?closed=true&limit=100&order=endDate&ascending=false",
+      "read_utc": "2026-09-10T09:54:26+00:00"
+    }
+  },
+  "artifacts": [
+    "runs\\20260910T095426Z_calibration_bycat\\report.md",
+    "runs\\20260910T095426Z_calibration_bycat\\calib_by_cat.csv"
+  ],
+  "secrets_used": [],
+  "summary": {
+    "markets": 2931,
+    "pages": 30,
+    "longshot_edge": {
+      "Culture_T1": 0.0444,
+      "Crypto_T1": 0.0159,
+      "Tech_T1": 0.0123,
+      "Sports_T1": 0.0117,
+      "Politics_T1": 0.0012,
+      "Geopolitics_T1": -0.1716,
+      "Culture_T7": 0.0686,
+      "Crypto_T7": 0.0169,
+      "Sports_T7": 0.0005,
+      "Politics_T7": -0.005,
+      "Tech_T7": -0.0176,
+      "Geopolitics_T7": -0.1893,
+      "Tech_T30": 0.0399,
+      "Sports_T30": 0.0196,
+      "Politics_T30": 0.0021,
+      "Crypto_T30": -0.034,
+      "Sports_T60": 0.0158,
+      "Politics_T60": 0.0148,
+      "Crypto_T60": -0.0516
+    }
+  },
+  "duration_s": 328.083,
+  "finished_utc": "2026-09-10T09:59:54+00:00"
+}

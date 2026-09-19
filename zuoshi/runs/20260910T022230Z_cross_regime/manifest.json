@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "run_id": "20260910T022230Z_cross_regime",
+  "name": "cross_regime",
+  "started_utc": "2026-09-10T02:22:30+00:00",
+  "script": "cross_regime_run.py",
+  "script_sha256": "3788416f720fc48ca04f2f8d1ac34ac499ecd00cb1ec0ca461b3731a3744d214",
+  "python": "3.12.10",
+  "cwd": "E:\\btc-backtester\\zuoshi",
+  "params": {
+    "events": [
+      "bitcoin-above-on-june-20-2026",
+      "bitcoin-above-on-july-25-2026",
+      "bitcoin-above-on-august-10-2026",
+      "bitcoin-above-on-june-16-2026",
+      "bitcoin-above-on-july-15-2026",
+      "bitcoin-above-on-august-8-2026",
+      "bitcoin-above-on-july-29-2026",
+      "bitcoin-above-on-august-15-2026"
+    ],
+    "half_spread": 0.01,
+    "fidelity_min": 10,
+    "size": 100,
+    "refresh_min": 30,
+    "max_pos": 1000
+  },
+  "sources": {
+    "data/event_*.json": {
+      "pattern": "data/event_*.json",
+      "n": 8,
+      "bytes": 320561,
+      "digest": "6a0c4a73a65553e3a2b4c7c3cbe243a7b0c73b86232bcfce5546f9fe2ce98bb2"
+    },
+    "data/prices_*.csv": {
+      "pattern": "data/prices_*.csv",
+      "n": 99,
+      "bytes": 1651108,
+      "digest": "349523c2e500cffb87756cd9307b8807deb916e68094d608f97c9de2f68dc8f9"
+    },
+    "data/okx_btc_1h*.csv": {
+      "pattern": "data/okx_btc_1h*.csv",
+      "n": 2,
+      "bytes": 7700,
+      "digest": "3c47812bd6c077b33688b1bbd6012c485257b44b787efce6fe7537457426ab4d"
+    }
+  },
+  "artifacts": [
+    "runs\\20260910T022230Z_cross_regime\\report.md",
+    "runs\\20260910T022230Z_cross_regime\\sources.txt",
+    "runs\\20260910T022230Z_cross_regime\\events.csv"
+  ],
+  "secrets_used": [],
+  "summary": {
+    "events": [
+      {
+        "regime": "RANGE",
+        "slug": "bitcoin-above-on-june-20-2026",
+        "end_date": "2026-06-20",
+        "agg_naive": 48.4,
+        "agg_m4": -278.4,
+        "clean_naive": 441.3,
+        "clean_m4": -113.1,
+        "bad_strikes": [
+          54000,
+          62000,
+          66000,
+          68000,
+          70000
+        ],
+        "pivot": 54000,
+        "p0": 0.5
+      },
+      {
+        "regime": "RANGE",
+        "slug": "bitcoin-above-on-july-25-2026",
+        "end_date": "2026-07-25",
+        "agg_naive": -473.2,
+        "agg_m4": -208.3,
+        "clean_naive": -473.2,
+        "clean_m4": -208.3,
+        "bad_strikes": [],
+        "pivot": 54000,
+        "p0": 0.5
+      },
+      {
+        "regime": "RANGE",
+        "slug": "bitcoin-above-on-august-10-2026",
+        "end_date": "2026-08-10",
+        "agg_naive": -196.3,
+        "agg_m4": -392.9,
+        "clean_naive": 10.4,
+        "clean_m4": -222.2,
+        "bad_strikes": [
+          66000,
+          68000,
+          70000,
+          72000
+        ],
+        "pivot": 54000,
+        "p0": 0.5
+      },
+      {
+        "regime": "UP",
+        "slug": "bitcoin-above-on-june-16-2026",
+        "end_date": "2026-06-16",
+        "agg_naive": -1223.6,
+        "agg_m4": -222.7,
+        "clean_naive": -1143.7,
+        "clean_m4": -147.3,
+        "bad_strikes": [
+          52000
+        ],
+        "pivot": 52000,
+        "p0": 0.5
+      },
+      {
+        "regime": "UP",
+        "slug": "bitcoin-above-on-july-15-2026",
+        "end_date": "2026-07-15",
+        "agg_naive": -265.2,
+        "agg_m4": -593.3,
+        "clean_naive": -499.3,
+        "clean_m4": -409.6,
+        "bad_strikes": [
+          60000,
+          64000,
+          66000,
+          68000
+        ],
+        "pivot": 52000,
+        "p0": 0.5
+      },
+      {
+        "regime": "UP",
+        "slug": "bitcoin-above-on-august-8-2026",
+        "end_date": "2026-08-08",
+        "agg_naive": -359.6,
+        "agg_m4": -396.1,
+        "clean_naive": -25.1,
+        "clean_m4": -267.1,
+        "bad_strikes": [
+          54000,
+          56000,
+          58000,
+          62000
+        ],
+        "pivot": 54000,
+        "p0": 0.5
+      },
+      {
+        "regime": "DOWN",
+        "slug": "bitcoin-above-on-july-29-2026",
+        "end_date": "2026-07-29",
+        "agg_naive": -284.2,
+        "agg_m4": -180.5,
+        "clean_naive": -159.4,
+        "clean_m4": -55.5,
+        "bad_strikes": [
+          56000,
+          58000
+        ],
+        "pivot": 66000,
+        "p0": 0.505
+      },
+      {
+        "regime": "DOWN",
+        "slug": "bitcoin-above-on-august-15-2026",
+        "end_date": "2026-08-15",
+        "agg_naive": -223.2,
+        "agg_m4": -693.2,
+        "clean_naive": -148.7,
+        "clean_m4": -72.0,
+        "bad_strikes": [
+          56000,
+          60000,
+          62000,
+          64000,
+          66000,
+          68000,
+          70000,
+          72000
+        ],
+        "pivot": 56000,
+        "p0": 0.5
+      }
+    ],
+    "agg_naive_total": -2976.9,
+    "agg_m4_total": -2965.4
+  },
+  "duration_s": 0.325,
+  "finished_utc": "2026-09-10T02:22:30+00:00"
+}

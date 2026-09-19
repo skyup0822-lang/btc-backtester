@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "run_id": "20260910T021951Z_arb_scan",
+  "name": "arb_scan",
+  "started_utc": "2026-09-10T02:19:51+00:00",
+  "script": "arb_scan.py",
+  "script_sha256": "e1b3c3545bf20bf4411fd3db68db892c93835cccc3dbae34aa1195654bfd9694",
+  "python": "3.12.10",
+  "cwd": "E:\\btc-backtester\\zuoshi",
+  "params": {
+    "limit_events": 15,
+    "samples": 2,
+    "interval_s": 2.0,
+    "verbose": false
+  },
+  "sources": {
+    "https://gamma-api.polymarket.com/events?active=true&closed=false&limit=300": {
+      "url": "https://gamma-api.polymarket.com/events?active=true&closed=false&limit=300",
+      "read_utc": "2026-09-10T02:19:51+00:00"
+    },
+    "data\\arb_snapshots.csv": {
+      "sha256": "075663849b9fca30c8b5d9693bf3caca5919d94fbc829a22aa9278a9925e669c",
+      "bytes": 315,
+      "mtime_utc": "2026-09-10T02:20:30+00:00"
+    }
+  },
+  "artifacts": [
+    "runs\\20260910T021951Z_arb_scan\\report.md",
+    "data\\arb_snapshots.csv"
+  ],
+  "secrets_used": [],
+  "summary": {
+    "samples": 2,
+    "net_arb_hits_total": 0,
+    "best_comp_net_edge": -0.001,
+    "tightest_neg_basket": 0.02547,
+    "mono_violations_total": 0
+  },
+  "duration_s": 39.12,
+  "finished_utc": "2026-09-10T02:20:30+00:00"
+}
